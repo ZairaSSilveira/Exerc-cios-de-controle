@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício de Controle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images-removebg-preview (1).png">
+</head>
+<body>
+    
+    <h1>Controle de Acesso</h1>
+    <div class="conteudo">
+    <img src="fotodefundohmtl.png" alt="">
+    <div id="access-container">
+        <label for="employee-card">Número do Cartão de Identificação:</label>
+        <input type="number" id="employee-card" min="1" max="9999">
+        <button onclick="checkAccess()">Verificar Acesso</button>
+        <p id="access-result"></p>
+    </div>
+</div>
+    <script>
+        function checkAccess() {
+            const cardNumber = parseInt(document.getElementById("employee-card").value);
+            let accessResult = document.getElementById("access-result");
+   
+            if (cardNumber >= 1000 && cardNumber <= 1999) {
+                accessResult.innerText = "Acesso Total - Funcionário autorizado a todas as áreas restritas.";
+            } else if (cardNumber >= 2000 && cardNumber <= 2999) {
+                accessResult.innerText = "Acesso Limitado - Funcionário autorizado a algumas áreas restritas.";
+            } else if (cardNumber > 3000) {
+                accessResult.innerText = "Acesso Negado - Funcionário não possui permissão para acessar as áreas restritas.";
+            } else {
+                accessResult.innerText = "Número de cartão inválido.";
+            }
+        }
+    </script>
+    
+</body>
+</html>
+
+

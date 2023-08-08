@@ -1,0 +1,90 @@
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #969292;
+    margin: 0;
+    padding: 0;
+    height: 800px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #615959;
+    font-size: 50px;
+}
+
+#access-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #4e4949;
+    border: 3px solid #050505;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(130, 128, 128, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    top: 350px;
+    left: 700px;
+    box-shadow: 10px 10px  8px rgb(105, 105, 117);
+
+    /* margin-bottom: 500px; */
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px; 
+    font-weight: bold;
+    font-weight: 900;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #615959;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    background-color: #79747a;
+    color: #2e2929;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    /* cursor: pointer; */
+}
+
+button:hover {
+    background-color: #dbcfe0;
+}
+
+#access-result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+img{
+height: 700px;
+width: 100%;
+
+/* margin-top: 70px; */
+}
+/* .conteudo{
+    background-image: url(fotodefundohmtl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}    */
